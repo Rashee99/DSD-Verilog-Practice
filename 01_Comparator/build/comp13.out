@@ -1,0 +1,30 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_0000028e94cb6cf0 .scope module, "comp13" "comp13" 2 4;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "x";
+    .port_info 1 /INPUT 1 "y";
+    .port_info 2 /OUTPUT 1 "z";
+UDP_compare .udp/comb "compare", 2
+ ,"001"
+ ,"011"
+ ,"101"
+ ,"111";
+o0000028e94be6b38 .functor BUFZ 1, C4<z>; HiZ drive
+o0000028e94be6b68 .functor BUFZ 1, C4<z>; HiZ drive
+L_0000028e94cb6e80 .udp UDP_compare, o0000028e94be6b38, o0000028e94be6b68;
+v0000028e94cb7240_0 .net "x", 0 0, o0000028e94be6b38;  0 drivers
+v0000028e94cb7460_0 .net "y", 0 0, o0000028e94be6b68;  0 drivers
+v0000028e94cb7680_0 .net "z", 0 0, L_0000028e94cb6e80;  1 drivers
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "comp13.v";

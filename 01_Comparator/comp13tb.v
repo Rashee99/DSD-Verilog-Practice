@@ -1,13 +1,13 @@
 `timescale 1ns/1ps  
-`include "comp12.v"
+`include "comp13.v"
 
-module comp12tb;
+module comp13tb;
     reg x;
     reg y;
     wire z;
 
     // Instantiate the unit under test
-    comp12 uut( .x(x), .y(y), .z(z));
+    comp13 uut( .x(x), .y(y), .z(z));
 
     initial begin
         $dumpfile("dump.vcd");
