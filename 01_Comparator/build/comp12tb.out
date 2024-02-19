@@ -7,62 +7,62 @@
 :vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
 :vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
 :vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
-S_0000029cef009a90 .scope module, "comp12tb" "comp12tb" 2 4;
+S_0000022bc65ea4a0 .scope module, "comp12tb" "comp12tb" 2 4;
  .timescale -9 -12;
-v0000029cef0097d0_0 .var "x", 0 0;
-v0000029cef055ce0_0 .var "y", 0 0;
-v0000029cef055d80_0 .net "z", 0 0, v0000029cef0074c0_0;  1 drivers
-S_0000029cef055b50 .scope module, "uut" "comp12" 2 10, 3 4 0, S_0000029cef009a90;
+v0000022bc65e9040_0 .var "x", 0 0;
+v0000022bc65e9380_0 .var "y", 0 0;
+v0000022bc65ea630_0 .net "z", 0 0, v0000022bc64e2fe0_0;  1 drivers
+S_0000022bc6515c20 .scope module, "uut" "comp12" 2 10, 3 4 0, S_0000022bc65ea4a0;
  .timescale -9 -12;
     .port_info 0 /INPUT 1 "x";
     .port_info 1 /INPUT 1 "y";
     .port_info 2 /OUTPUT 1 "z";
-v0000029cef0072a0_0 .net "x", 0 0, v0000029cef0097d0_0;  1 drivers
-v0000029cef007040_0 .net "y", 0 0, v0000029cef055ce0_0;  1 drivers
-v0000029cef0074c0_0 .var "z", 0 0;
-E_0000029cef00c1b0 .event anyedge, v0000029cef007040_0, v0000029cef0072a0_0;
-    .scope S_0000029cef055b50;
+v0000022bc64e2dc0_0 .net "x", 0 0, v0000022bc65e9040_0;  1 drivers
+v0000022bc65ebee0_0 .net "y", 0 0, v0000022bc65e9380_0;  1 drivers
+v0000022bc64e2fe0_0 .var "z", 0 0;
+E_0000022bc65ec1d0 .event anyedge, v0000022bc65ebee0_0, v0000022bc64e2dc0_0;
+    .scope S_0000022bc6515c20;
 T_0 ;
-    %wait E_0000029cef00c1b0;
-    %load/vec4 v0000029cef0072a0_0;
-    %load/vec4 v0000029cef007040_0;
+    %wait E_0000022bc65ec1d0;
+    %load/vec4 v0000022bc64e2dc0_0;
+    %load/vec4 v0000022bc65ebee0_0;
     %cmp/e;
     %jmp/0xz  T_0.0, 4;
     %pushi/vec4 1, 0, 1;
-    %cassign/vec4 v0000029cef0074c0_0;
+    %cassign/vec4 v0000022bc64e2fe0_0;
     %jmp T_0.1;
 T_0.0 ;
     %pushi/vec4 0, 0, 1;
-    %cassign/vec4 v0000029cef0074c0_0;
+    %cassign/vec4 v0000022bc64e2fe0_0;
 T_0.1 ;
     %jmp T_0;
     .thread T_0, $push;
-    .scope S_0000029cef009a90;
+    .scope S_0000022bc65ea4a0;
 T_1 ;
-    %vpi_call 2 13 "$dumpfile", "dump.vcd" {0 0 0};
+    %vpi_call 2 13 "$dumpfile", "dump12.vcd" {0 0 0};
     %vpi_call 2 14 "$dumpvars" {0 0 0};
     %pushi/vec4 0, 0, 1;
-    %store/vec4 v0000029cef0097d0_0, 0, 1;
+    %store/vec4 v0000022bc65e9040_0, 0, 1;
     %pushi/vec4 0, 0, 1;
-    %store/vec4 v0000029cef055ce0_0, 0, 1;
+    %store/vec4 v0000022bc65e9380_0, 0, 1;
     %delay 20000, 0;
     %pushi/vec4 1, 0, 1;
-    %store/vec4 v0000029cef0097d0_0, 0, 1;
+    %store/vec4 v0000022bc65e9040_0, 0, 1;
     %delay 20000, 0;
     %pushi/vec4 1, 0, 1;
-    %store/vec4 v0000029cef055ce0_0, 0, 1;
+    %store/vec4 v0000022bc65e9380_0, 0, 1;
     %delay 20000, 0;
     %pushi/vec4 0, 0, 1;
-    %store/vec4 v0000029cef0097d0_0, 0, 1;
+    %store/vec4 v0000022bc65e9040_0, 0, 1;
     %delay 20000, 0;
     %pushi/vec4 0, 0, 1;
-    %store/vec4 v0000029cef055ce0_0, 0, 1;
+    %store/vec4 v0000022bc65e9380_0, 0, 1;
     %delay 40000, 0;
     %end;
     .thread T_1;
-    .scope S_0000029cef009a90;
+    .scope S_0000022bc65ea4a0;
 T_2 ;
-    %vpi_call 2 24 "$monitor", "time =%2d x=%d y=%d z=%d", $time, v0000029cef0097d0_0, v0000029cef055ce0_0, v0000029cef055d80_0 {0 0 0};
+    %vpi_call 2 24 "$monitor", "time =%2d x=%d y=%d z=%d", $time, v0000022bc65e9040_0, v0000022bc65e9380_0, v0000022bc65ea630_0 {0 0 0};
     %end;
     .thread T_2;
 # The file index is used to find the file name in the following table.

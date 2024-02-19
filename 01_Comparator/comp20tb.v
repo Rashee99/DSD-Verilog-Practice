@@ -10,7 +10,7 @@ module comp20tb;
     comp20 uut( .x(x), .y(y), .z(z));
 
     initial begin
-        $dumpfile("dumpCom20.vcd");
+        $dumpfile("dump20.vcd");
         $dumpvars;
 
         x=2'b00; y=2'b00;

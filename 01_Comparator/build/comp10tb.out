@@ -7,54 +7,54 @@
 :vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
 :vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
 :vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
-S_000001b6d72f9830 .scope module, "comp10tb" "comp10tb" 2 4;
+S_000002acb53598e0 .scope module, "comp10tb" "comp10tb" 2 4;
  .timescale -9 -12;
-v000001b6d71b5330_0 .var "x", 0 0;
-v000001b6d71b53d0_0 .var "y", 0 0;
-v000001b6d71b5470_0 .net "z", 0 0, L_000001b6d71b3770;  1 drivers
-S_000001b6d71b5100 .scope module, "uut" "comp10" 2 10, 3 1 0, S_000001b6d72f9830;
+v000002acb55053f0_0 .var "x", 0 0;
+v000002acb5505490_0 .var "y", 0 0;
+v000002acb5502880_0 .net "z", 0 0, L_000002acb5502ba0;  1 drivers
+S_000002acb5505120 .scope module, "uut" "comp10" 2 10, 3 1 0, S_000002acb53598e0;
  .timescale -9 -12;
     .port_info 0 /INPUT 1 "x";
     .port_info 1 /INPUT 1 "y";
     .port_info 2 /OUTPUT 1 "z";
-L_000001b6d71b5510 .functor NOT 1, v000001b6d71b5330_0, C4<0>, C4<0>, C4<0>;
-L_000001b6d72fbf20 .functor NOT 1, v000001b6d71b53d0_0, C4<0>, C4<0>, C4<0>;
-L_000001b6d7182da0 .functor AND 1, L_000001b6d71b5510, L_000001b6d72fbf20, C4<1>, C4<1>;
-L_000001b6d71831e0 .functor AND 1, v000001b6d71b5330_0, v000001b6d71b53d0_0, C4<1>, C4<1>;
-L_000001b6d71b3770 .functor OR 1, L_000001b6d7182da0, L_000001b6d71831e0, C4<0>, C4<0>;
-v000001b6d7182fc0_0 .net *"_ivl_0", 0 0, L_000001b6d71b5510;  1 drivers
-v000001b6d7182b40_0 .net *"_ivl_2", 0 0, L_000001b6d72fbf20;  1 drivers
-v000001b6d72f9680_0 .net *"_ivl_4", 0 0, L_000001b6d7182da0;  1 drivers
-v000001b6d72fbe80_0 .net *"_ivl_6", 0 0, L_000001b6d71831e0;  1 drivers
-v000001b6d72f99c0_0 .net "x", 0 0, v000001b6d71b5330_0;  1 drivers
-v000001b6d72f9a60_0 .net "y", 0 0, v000001b6d71b53d0_0;  1 drivers
-v000001b6d71b5290_0 .net "z", 0 0, L_000001b6d71b3770;  alias, 1 drivers
-    .scope S_000001b6d72f9830;
+L_000002acb5505530 .functor NOT 1, v000002acb55053f0_0, C4<0>, C4<0>, C4<0>;
+L_000002acb54d2dc0 .functor NOT 1, v000002acb5505490_0, C4<0>, C4<0>, C4<0>;
+L_000002acb54d3200 .functor AND 1, L_000002acb5505530, L_000002acb54d2dc0, C4<1>, C4<1>;
+L_000002acb5502920 .functor AND 1, v000002acb55053f0_0, v000002acb5505490_0, C4<1>, C4<1>;
+L_000002acb5502ba0 .functor OR 1, L_000002acb54d3200, L_000002acb5502920, C4<0>, C4<0>;
+v000002acb54d2fe0_0 .net *"_ivl_0", 0 0, L_000002acb5505530;  1 drivers
+v000002acb54d2b60_0 .net *"_ivl_2", 0 0, L_000002acb54d2dc0;  1 drivers
+v000002acb53596b0_0 .net *"_ivl_4", 0 0, L_000002acb54d3200;  1 drivers
+v000002acb5359a70_0 .net *"_ivl_6", 0 0, L_000002acb5502920;  1 drivers
+v000002acb5359b10_0 .net "x", 0 0, v000002acb55053f0_0;  1 drivers
+v000002acb55052b0_0 .net "y", 0 0, v000002acb5505490_0;  1 drivers
+v000002acb5505350_0 .net "z", 0 0, L_000002acb5502ba0;  alias, 1 drivers
+    .scope S_000002acb53598e0;
 T_0 ;
-    %vpi_call 2 13 "$dumpfile", "dump.vcd" {0 0 0};
+    %vpi_call 2 13 "$dumpfile", "dump10.vcd" {0 0 0};
     %vpi_call 2 14 "$dumpvars" {0 0 0};
     %pushi/vec4 0, 0, 1;
-    %store/vec4 v000001b6d71b5330_0, 0, 1;
+    %store/vec4 v000002acb55053f0_0, 0, 1;
     %pushi/vec4 0, 0, 1;
-    %store/vec4 v000001b6d71b53d0_0, 0, 1;
+    %store/vec4 v000002acb5505490_0, 0, 1;
     %delay 20000, 0;
     %pushi/vec4 1, 0, 1;
-    %store/vec4 v000001b6d71b5330_0, 0, 1;
+    %store/vec4 v000002acb55053f0_0, 0, 1;
     %delay 20000, 0;
     %pushi/vec4 1, 0, 1;
-    %store/vec4 v000001b6d71b53d0_0, 0, 1;
+    %store/vec4 v000002acb5505490_0, 0, 1;
     %delay 20000, 0;
     %pushi/vec4 0, 0, 1;
-    %store/vec4 v000001b6d71b5330_0, 0, 1;
+    %store/vec4 v000002acb55053f0_0, 0, 1;
     %delay 20000, 0;
     %pushi/vec4 0, 0, 1;
-    %store/vec4 v000001b6d71b53d0_0, 0, 1;
+    %store/vec4 v000002acb5505490_0, 0, 1;
     %delay 40000, 0;
     %end;
     .thread T_0;
-    .scope S_000001b6d72f9830;
+    .scope S_000002acb53598e0;
 T_1 ;
-    %vpi_call 2 24 "$monitor", "time =%2d x=%d y=%d z=%d", $time, v000001b6d71b5330_0, v000001b6d71b53d0_0, v000001b6d71b5470_0 {0 0 0};
+    %vpi_call 2 24 "$monitor", "time =%2d x=%d y=%d z=%d", $time, v000002acb55053f0_0, v000002acb5505490_0, v000002acb5502880_0 {0 0 0};
     %end;
     .thread T_1;
 # The file index is used to find the file name in the following table.
