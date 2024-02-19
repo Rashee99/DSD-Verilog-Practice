@@ -1,0 +1,89 @@
+$date
+	Mon Feb 19 10:16:44 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module comp20tb $end
+$var wire 1 ! z $end
+$var reg 2 " x [1:0] $end
+$var reg 2 # y [1:0] $end
+$scope module uut $end
+$var wire 2 $ x [1:0] $end
+$var wire 2 % y [1:0] $end
+$var wire 1 ! z $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 %
+b0 $
+b0 #
+b0 "
+1!
+$end
+#20000
+0!
+b1 #
+b1 %
+#40000
+b10 #
+b10 %
+#60000
+b11 #
+b11 %
+#80000
+b0 #
+b0 %
+b1 "
+b1 $
+#100000
+1!
+b1 #
+b1 %
+#120000
+0!
+b10 #
+b10 %
+#140000
+b11 #
+b11 %
+#160000
+b0 #
+b0 %
+b10 "
+b10 $
+#180000
+b1 #
+b1 %
+#200000
+1!
+b10 #
+b10 %
+#220000
+0!
+b11 #
+b11 %
+#240000
+b0 #
+b0 %
+b11 "
+b11 $
+#260000
+b1 #
+b1 %
+#280000
+0!
+b10 #
+b10 %
+#300000
+1!
+b11 #
+b11 %

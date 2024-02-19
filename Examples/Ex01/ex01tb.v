@@ -1,14 +1,14 @@
-`timescale 1ps/1ps
+`timescale 1ns/1ps
 `include "ex01.v"
 
-module ex01tb;
+module ex01tb;  // No input No Output 
     reg A;
     reg B;
     reg C;
     wire P;
     wire Q;
 
-    ex01 uut  (.A(A), .B(B), .C(C), .P(P), .Q(Q));
+    ex01 uut  (.A(A), .B(B), .C(C), .P(P), .Q(Q)); // Copy of Ex01.v (if you want another uut can be added)
 
     initial begin
         $dumpfile("DumpEx01.vcd");

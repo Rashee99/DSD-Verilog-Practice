@@ -10,7 +10,7 @@ module comp13tb;
     comp13 uut( .x(x), .y(y), .z(z));
 
     initial begin
-        $dumpfile("dump.vcd");
+        $dumpfile("dump13.vcd");
         $dumpvars;
 
         x=0; y=0; 
