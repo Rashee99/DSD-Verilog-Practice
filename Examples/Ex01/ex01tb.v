@@ -22,6 +22,7 @@ module ex01tb;  // No input No Output
         #20 C = 1;
         #20 C = 0; B=1;
         #20 C = 1;
+        #20
     end
 
     initial begin

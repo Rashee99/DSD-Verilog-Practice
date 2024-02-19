@@ -22,6 +22,7 @@ module ex02tb;
         #20 C = 1;
         #20 C = 0; B=1;
         #20 C = 1;
+        #20
     end
 
     initial begin
